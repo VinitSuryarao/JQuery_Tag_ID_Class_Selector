@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {
+            // Add CSS Class on Click Event For Tag
+            $("h2").click( function()
+            {
+               $("h2").css("color","red");
+            });
+            
+            // Add CSS Class on Click Event For ID
+            $("#msgID").click( function()
+            {
+               $("#msgID").css("color","green");
+            });
+            
+            // Add CSS Class on Click Event For Class
+            $(".msgClass").click( function()
+            {
+               $(".msgClass").css("color","blue");
+            });
+
+         });
+
+     </script>
+<head>
+  <body>
+
+    <h2> Tag Selector</h2>
+    <h1 id="msgID"> ID Selector</h1>
+    <h1 class="msgClass"> Class Selector</h1>
+
+  </body>
+</html>
